@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <title>Register for flight notifications</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<form action="/notificationRegister" method="post">
+	    <p/>From: <input type="text" name="origin">
+	    <p/>To: <input type="text" name="destination">
+	    <p/>Email :<input type="text" name="email">
+	    <p/>Frequency of receiving email updates : 
+	      <select name="frequency">
+	        <option value="daily">Daily</option>
+		    <option value="weekly">Weekly</option>
+		    <option value="monthly">Monthly</option>
+		    <option value="uncapped">Uncapped</option>
+  		  </select>
+	    <p/><input type="submit" name="Submit">
+	</form>
+</body>
+</html>
